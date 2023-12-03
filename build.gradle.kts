@@ -17,16 +17,16 @@ base.archivesName.set(archives_base_name)
 val javaVersion = 17
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	// Only for necessary mods
+	maven("https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/") {
+		name = "GeckoLib"
+	}
 }
 
 // All the dependencies are declared at gradle/libs.version.toml and referenced with "libs.<id>"
 // See https://docs.gradle.org/current/userguide/platforms.html for information on how version catalogs work.
 dependencies {
+
 	minecraft(libs.minecraft)
 	mappings(
 		variantOf(libs.quilt.mappings) {
@@ -51,8 +51,9 @@ dependencies {
 	// Quilted Fabric API will automatically pull in the correct QSL version.
 	modImplementation(libs.qfapi)
 	// modImplementation(libs.bundles.qfapi) // If you wish to use the deprecated Fabric API modules
-
 	modImplementation(libs.qkl)
+	modImplementation("software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.3")
+
 }
 
 tasks {

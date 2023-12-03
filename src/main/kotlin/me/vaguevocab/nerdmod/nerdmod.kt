@@ -1,14 +1,22 @@
-package me.`100percentanerd`.nerdmod
+package me.vaguevocab.nerdmod
+
 
 import org.quiltmc.loader.api.ModContainer
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
+import me.vaguevocab.nerdmod.registry.NerdmodItem
+import net.fabricmc.fabric.api.`object`.builder.v1.entity.FabricDefaultAttributeRegistry
 
 object nerdmod : ModInitializer {
-    val LOGGER: Logger = LoggerFactory.getLogger("Example Mod")
+
 
     override fun onInitialize(mod: ModContainer) {
-        LOGGER.info("Hello Quilt world from {}!", mod.metadata()?.name())
+        // Instantiate registries
+        var item_reg = NerdmodItem()
+//        var block_reg = NerdmodBlockRegistry()
+
+        // Registers
+        item_reg.register(mod)
+//        block_reg.register(mod)
     }
 }
+

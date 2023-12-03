@@ -9,6 +9,14 @@ import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
 import org.quiltmc.qsl.entity.api.QuiltEntityTypeBuilder
 
-class NerdmodEntitiesRegistry {
-    val BOOMBOOMENTITY: EntityType<BoomBoomEntity> = Registry.register(Registries.ENTITY_TYPE, Identifier("nerdmod", "boom_boom_entity"), QuiltEntityTypeBuilder.create(SpawnGroup.MISC, BoomBoomEntity).dimensions(EntityDimensions.fixed(.25f, .25f)).build())
+class NerdmodEntities {
+    val BOOMBOOMENTITY: EntityType<BoomBoomEntity> = Registry.register(
+        Registries.ENTITY_TYPE,
+        Identifier("nerdmod", "boom_boom_entity"),
+        QuiltEntityTypeBuilder
+            .create(SpawnGroup.MISC, ::BoomBoomEntity)
+            .setDimensions(EntityDimensions
+                .fixed(.25f, .25f)
+            ).build()
+    )
 }

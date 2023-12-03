@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "nerdmod:block/test_block" }
+  }
+}

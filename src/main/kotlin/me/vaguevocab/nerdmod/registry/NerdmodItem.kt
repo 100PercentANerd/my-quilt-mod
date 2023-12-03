@@ -16,7 +16,7 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings
 
 // For Items - BlockItems are in NerdmodBlockRegistry
 
-class NerdmodItemRegistry {
+class NerdmodItem {
 
     val FISH_FINGER_CUSTARD: Item = Item(
         QuiltItemSettings().food(
