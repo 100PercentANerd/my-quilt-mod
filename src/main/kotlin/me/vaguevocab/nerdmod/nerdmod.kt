@@ -1,11 +1,11 @@
-package com.example.example_mod
+package me.`100percentanerd`.nerdmod
 
 import org.quiltmc.loader.api.ModContainer
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
-object ExampleMod : ModInitializer {
+object nerdmod : ModInitializer {
     val LOGGER: Logger = LoggerFactory.getLogger("Example Mod")
 
     override fun onInitialize(mod: ModContainer) {

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:bowl"
+        },
+        {
+            "item": "nerdmod:fish_fingers_and_custard"
+        }
+    ],
+    "result": {
+        "item": "nerdmod:fish_finger_custard_bowl",
+        "count": 1
+    }
+}

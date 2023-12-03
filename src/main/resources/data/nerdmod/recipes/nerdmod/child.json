@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:villager_spawn_egg"
+        }
+    ],
+    "result": {
+        "item": "nerdmod:child",
+        "count": 1
+    }
+}
