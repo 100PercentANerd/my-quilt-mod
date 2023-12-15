@@ -3,7 +3,7 @@ package me.vaguevocab.nerdmod.registry
 
 // For Blocks and BlockItems
 
-class NerdmodBlock {
+class NerdmodBlocks {
 
 //    // Declare block
 //    val TEST_BLOCK: Block = registerBlock("test_block", QuiltBlockSettings())

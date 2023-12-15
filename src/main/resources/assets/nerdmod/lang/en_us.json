@@ -1,5 +1,7 @@
 {
   "item.nerdmod.fish_finger_custard": "Fish fingers and custard",
   "item.nerdmod.fish_finger_custard_bowl": "Bowl of Fish Fingers and Custard",
-  "item.nerdmod.child": "Child"
+  "item.nerdmod.child": "Child",
+  "enchantment.nerdmod.more_damage": "More Damage",
+  "effect.nerdmod.test_effect": "Test effect"
 }
